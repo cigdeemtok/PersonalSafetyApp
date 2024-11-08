@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:padding="10dp"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_menu_my_calendar"
+            app:tint="@color/black"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/requestKullaniciAdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cigdem Tok"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:layout_weight="2"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/butonLinearPart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/butonEkle"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/system_accent2_800"
+                android:text="+"
+                android:textSize="15sp"
+                tools:targetApi="s" />
+            <Button
+                android:id="@+id/butonReddet"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:text="x"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

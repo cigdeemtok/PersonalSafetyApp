@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:title="Home">
+
+    </item>
+
+    <item
+        android:id="@+id/friendsFragment"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="Friends">
+
+    </item>
+
+    <item
+        android:id="@+id/notificationsFragment"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="Notifications">
+
+    </item>
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Profile">
+
+    </item>
+
+</menu>

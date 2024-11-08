@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/girisYapFragment">
+
+    <fragment
+        android:id="@+id/girisYapFragment"
+        android:name="com.example.kisiselguvenlikuygulamasi.view.GirisYapFragment"
+        android:label="fragment_giris_yap"
+        tools:layout="@layout/fragment_giris_yap" >
+        <action
+            android:id="@+id/action_girisYapFragment_to_kayitOlFragment"
+            app:destination="@id/kayitOlFragment" />
+        <action
+            android:id="@+id/action_girisYapFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kayitOlFragment"
+        android:name="com.example.kisiselguvenlikuygulamasi.view.KayitOlFragment"
+        android:label="fragment_kayit_ol"
+        tools:layout="@layout/fragment_kayit_ol" >
+        <action
+            android:id="@+id/action_kayitOlFragment_to_kayitInfoFragment"
+            app:destination="@id/kayitInfoFragment" />
+        <action
+            android:id="@+id/action_kayitOlFragment_to_girisYapFragment"
+            app:destination="@id/girisYapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kayitInfoFragment"
+        android:name="com.example.kisiselguvenlikuygulamasi.view.KayitInfoFragment"
+        android:label="fragment_kayit_info"
+        tools:layout="@layout/fragment_kayit_info" >
+        <action
+            android:id="@+id/action_kayitInfoFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.kisiselguvenlikuygulamasi.view.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_friendsFragment"
+            app:destination="@id/friendsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendsFragment"
+        android:name="com.example.kisiselguvenlikuygulamasi.view.FriendsFragment"
+        android:label="fragment_friends"
+        tools:layout="@layout/fragment_friends">
+        <action
+            android:id="@+id/action_friendsFragment_to_notificationsFragment"
+            app:destination="@id/notificationsFragment" />
+        <action
+            android:id="@+id/action_friendsFragment_to_seeFriendProfileFragment"
+            app:destination="@id/seeFriendProfileFragment" />
+        <action
+            android:id="@+id/action_friendsFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.example.kisiselguvenlikuygulamasi.view.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications">
+        <action
+            android:id="@+id/action_notificationsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.kisiselguvenlikuygulamasi.view.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_girisYapFragment"
+            app:destination="@id/girisYapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.kisiselguvenlikuygulamasi.view.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <argument
+            android:name="friendID"
+            app:argType="string" />
+        <argument
+            android:name="adSoyad"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/seeFriendProfileFragment"
+        android:name="com.example.kisiselguvenlikuygulamasi.view.SeeFriendProfileFragment"
+        android:label="fragment_see_friend_profile"
+        tools:layout="@layout/fragment_see_friend_profile">
+        <argument
+            android:name="friendId"
+            app:argType="string" />
+        <argument
+            android:name="adSoyad"
+            app:argType="string" />
+    </fragment>
+</navigation>

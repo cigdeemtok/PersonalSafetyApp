@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.SeeFriendProfileFragment">
+
+    <LinearLayout
+        android:id="@+id/profileCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_foreground"
+            app:tint="@color/black"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/profileKullaniciAdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KULLANICI ADI"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/profileTelefonNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Phone Number"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/informationLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileCard"
+        android:orientation="horizontal"
+        android:layout_marginTop = "50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="2"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adres"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kan Grubu"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alerjiler"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="İlaçlar"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tıbbi Notlar"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Organ Bağışı"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/profileAdres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="İzmit/KOCAELİ"
+                android:layout_margin="10dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/profileKanGrubu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0+"
+                android:textSize="15sp"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/profileAlerjiler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yok"
+                android:layout_margin="10dp"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/profileIlaclar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="İnsülin"
+                android:layout_margin="10dp"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/profileTibbiNotlar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Şeker Hastası"
+                android:layout_margin="10dp"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/profileOrganBagisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bilinmiyor"
+                android:layout_margin="10dp"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

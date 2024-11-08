@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="KAYIT OLMAK İÇİN PROFİL BİLGİLERİNİZİ TAMAMLAYINIZ!"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/containerAdSoyad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/infoText"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        >
+        <TextView
+            android:id="@+id/textAdSoyad"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Ad-Soyad"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/editAdSoyad"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Ad-Soyad"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/containerOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/containerAdSoyad"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        >
+        <TextView
+            android:id="@+id/textAdres"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Adres"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/editAdres"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Adresiniz"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/containerTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/containerOne"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        >
+        <TextView
+            android:id="@+id/textKan"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Kan Grubu"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+        <EditText
+            android:id="@+id/editKan"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Kan grubu"
+            android:textSize="15sp"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/containerThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/containerTwo"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        >
+        <TextView
+            android:id="@+id/textAlerji"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Alerjiler"
+            android:layout_margin="5dp"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/editAlerji"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Mevcut alerjiler"
+            android:layout_margin="5dp"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/containerFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/containerThree"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        >
+        <TextView
+            android:id="@+id/textIlac"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="İlaçlar"
+            android:layout_margin="5dp"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/editIlac"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Mevcut ilaçlar"
+            android:layout_margin="5dp"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/containerFive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/containerFour"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        >
+        <TextView
+            android:id="@+id/textHastalik"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Tıbbi Notlar"
+            android:layout_margin="5dp"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/editHastalik"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Mevcut hastalıklar"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/containerSix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/containerFive"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        >
+
+
+        <TextView
+            android:id="@+id/textOrgan"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Organ Bağışı"
+            android:layout_margin="5dp"
+            android:textSize="20sp"/>
+
+
+        <EditText
+            android:id="@+id/editOrgan"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Organ Bağışı"
+            android:layout_margin="5dp"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/containerSeven"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/containerSix"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        >
+
+
+        <TextView
+            android:id="@+id/textPhone"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Telefon No"
+            android:layout_margin="5dp"
+            android:textSize="20sp"/>
+
+
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Telefon Numarası"
+            android:layout_margin="5dp"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/girisInfoButon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KAYDI TAMAMLA"
+        app:layout_constraintTop_toBottomOf="@id/containerSeven"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
