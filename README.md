@@ -45,5 +45,52 @@ The app is designed with user privacy in mind:
 >[!NOTE]
 >You can clone this repository and check it out. You should connect the project to Firebase and make sure you have all dependencies that you need. You should replace API key part in your manifest file with your own Google Cloud API key.
 
+## **Screenshots**
+
+- Sign in and register pages:
+<p>
+    <img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/sign_in.jpg" width="30%">
+    <img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/register.jpg" width="30%">
+    <img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/register_info.jpg" width="30%">
+</p>
+
+- Home screen and SOS messages(Sms option is not avaliable because of operator limitations so email option is preffered. But you can see sms example below as well):
+<p>
+    <img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/sos_email.jpg" width="30%">
+    <img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/sms_sos.jpeg" width="30%">
+</p>
+<img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/home_screen.jpg" width="30%">
+
+- Friends screen:
+<p>
+    <img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/friends_screen.jpg" width="30%">
+    <img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/friend_request_alert.jpg" width="30%">
+    <img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/see_friend_profile.jpg" width="30%">
+</p>
+
+  - Location tracking and location service in friends screen:
+    
+<img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/map_friend_location.jpeg" width="30%">
+<img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/location_service.jpeg" width="30%">
 
 
+- Notifications and profile screen:
+<p>
+  <img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/friend_request_notificaiton.jpg" width="30%">
+  <img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/user_profile_screen.jpg" width="30%">
+</p>
+
+- Database structures for friends, user informations, requests and locations respectively:
+ <p>
+  <img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/friend_db.png" width="30%">
+  <img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/userInfo_db.png" width="30%">
+</p>
+<p>
+  <img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/request_db.png" width="30%">
+  <img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/location_db.png" width="30%"> 
+</p>
+
+- Navigation graph of app:
+<p>
+  <img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/nav_graph.png" width="30%">
+</p>
