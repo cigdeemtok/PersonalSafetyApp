@@ -70,9 +70,8 @@ The app is designed with user privacy in mind:
 
   - Location tracking and location service in friends screen:
     
-<img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/map_friend_location.jpeg" width="30%">
 <img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/location_service.jpeg" width="30%">
-
+<img src="https://github.com/cigdeemtok/PersonalSafetyApp/blob/main/images/map_friend_location.jpeg" width="30%">
 
 - Notifications and profile screen:
 <p>
